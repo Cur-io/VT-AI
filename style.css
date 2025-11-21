@@ -1,0 +1,113 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Main Card */
+.container {
+  width: 650px;
+  background: #1e293b;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255,255,255,0.08);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0f172a;
+  transition: 0.2s;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+button:disabled {
+  background: #475569;
+  color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+/* Status Text */
+#status {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* Fallback Section */
+#fallbackSection {
+  margin-top: 25px;
+  padding: 15px;
+  background: #334155;
+  border-radius: 12px;
+  border-left: 4px solid #38bdf8;
+}
+
+/* Transcript Box */
+#transcript {
+  margin-top: 25px;
+  padding: 20px;
+  min-height: 180px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  color: #e2e8f0;
+  overflow-y: auto;
+  font-size: 15px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Scrollbar Style */
+#transcript::-webkit-scrollbar {
+  width: 8px;
+}
+#transcript::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 5px;
+}
+#transcript::-webkit-scrollbar-track {
+  background: #1e293b;
+}

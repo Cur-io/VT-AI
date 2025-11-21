@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voice-to-Text Transcriber</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+</head>
+<body>
+<div class="container">
+  <h1>VT-AI</h1>
+
+  <div id="browserSection">
+    <button id="startBtn">Start Recording (Browser)</button>
+    <button id="stopBtn" disabled>Stop</button>
+    <div id="status">Status: idle</div>
+  </div>
+
+  <div id="fallbackSection">
+    <h3>Fallback (Whisper)</h3>
+    <p>If your browser does not support real-time speech recognition:</p>
+    <p>Record audio separately (e.g., phone), save as <code>recording.wav</code>, then run <code>transcribe_whisper.py</code>.</p>
+  </div>
+
+  <div id="transcript" contenteditable="true"></div>
+
+    <button id="copyBtn">Copy Transcript</button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
